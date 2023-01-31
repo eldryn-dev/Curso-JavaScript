@@ -17,19 +17,18 @@
             
             <form action="" method="get" >
                 Ano de Nascimento :
-                <input id="borntxt" name="borntxt" type="text" placeholder="XXXX" >
+                <input id="borntxt" name="borntxt" type="number" placeholder="XXXX" >
                 <br>
-                Sexo: <select name="sextxt" id="sextxt">
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
-                
-                </select>
-                <!--  <input type="checkbox" name="sextxt" id="sextxt">Masculino
-                <input type="checkbox" name="sextxt" id="sextxt">Feminino -->
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas">
+                <label for="Masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="Fem">Feminino</label>
+            </p>
                 <input type="button" value="Verificar" onclick="gerador()">
 
                 <div id="res">
-
+                    Preencha os dados acima para ver o resultado!
                 </div>
             </form>
 
@@ -43,21 +42,24 @@
     <script>
         function gerador() {
             var agora = new Date ()
-            var atual = Number(agora.getYear())
-            var ano = Number(window.document.querySelector('input#borntxt'))
-
-            var idade = Number(ano - atual)
+            var atual = agora.getFullYear()
+            var ano = (window.document.querySelector('input#borntxt'))
 
             var res = window.document.getElementById('res')
-            res.innerHTML = (`<p>Você tem ${idade} anos de idade!</p>`)
-            //res.innerHTML = (`${typeof(idade)}`)
 
+            var idade = atual - Number(ano.value)
 
+            var fsex = document.getElementsByName('radsex')
+            var genero = ''
+            if (fsex[0].checked) {
+                genero = 'Homem'
+            }else {
+                genero = 'Mulher'
+            }
 
+            
+            res.innerHTML = (`<p>Você é ${genero} e tem ${idade} anos de idade!</p>`)
         }
-
-        
-
     </script>
 
 </body>
