@@ -25,7 +25,7 @@
                 <input type="radio" name="radsex" id="fem">
                 <label for="Fem">Feminino</label>
             </p>
-                <input type="button" value="Verificar" onclick="gerador()">
+                <input id="botao" type="button" value="Verificar" onclick="gerador()">
 
                 <div id="res">
                     Preencha os dados acima para ver o resultado!
@@ -39,28 +39,7 @@
         <p>@cursoemvideo</p>
     </footer>
 
-    <script>
-        function gerador() {
-            var agora = new Date ()
-            var atual = agora.getFullYear()
-            var ano = (window.document.querySelector('input#borntxt'))
-
-            var res = window.document.getElementById('res')
-
-            var idade = atual - Number(ano.value)
-
-            var fsex = document.getElementsByName('radsex')
-            var genero = ''
-            if (fsex[0].checked) {
-                genero = 'Homem'
-            }else {
-                genero = 'Mulher'
-            }
-
-            
-            res.innerHTML = (`<p>Você é ${genero} e tem ${idade} anos de idade!</p>`)
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

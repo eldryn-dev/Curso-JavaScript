@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header{
+    text-align: center;
+    background-color: antiquewhite;
+
+    margin: 12px;
+    padding: 12px;
+}
+
+main{
+    background-color: rgb(243, 213, 169);
+    height: 600px;
+    margin: 12px;
+    padding: 12px;
+}
+
+form {
+    background-color: rgb(131, 117, 92);
+    padding: 5px;
+
+    color: white;
+    font-size: 1.4em;
+}
+
+form > p {
+    margin-top: 5px;
+}
+
+
+input#botao {
+    text-align: center;
+    margin: 10px 10px 10px;
+    padding: 6px;
+    font-size: 0.8em;
+} 
+
+footer {
+    text-align: center;
+    background-color: aquamarine;
+    margin: 12px;
+    padding: 12px;
+}
