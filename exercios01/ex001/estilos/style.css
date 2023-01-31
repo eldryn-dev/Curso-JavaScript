@@ -30,6 +30,7 @@ div#boxrel{
     text-align: center;
     border-radius: 12px;
     display: flex;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
 }
 
 div#boxrel > p{
