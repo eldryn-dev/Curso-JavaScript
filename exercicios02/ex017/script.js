@@ -1,16 +1,10 @@
-var texto = window.document.querySelector('p#rel')
-        var agora = new Date()
-        var hora = agora.getHours()
-        var fundo = window.document.querySelector('div#boxrel')     
-        
-        
-        texto.innerHTML = `Agora são ${hora} horas!`
+function gerar() {
+    var num = window.document.getElementById('txtn')
+    var res = window.document.getElementById('seltab')
 
-        if (hora < 12){
-            fundo.style.background ='#82D5EB'
-            texto.style.color ='#5F44FF'
-        } else if (hora < 18){
-            //boatarde//
-        } else {
-            //boa noite//
-        }
+    let n = Number(num.value)
+    res.innerHTML=''
+    for (let c = 1 ; c <= 10 ; c++) {
+        res.innerHTML+=`${n} x ${c} = ${n*c} <br>`        
+    }
+}

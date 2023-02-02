@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(114, 120, 209);
+    background-color: rgb(78, 86, 202);
 }
 
 header{
@@ -22,34 +22,24 @@ header{
     
 }
 
-div#boxrel{
-    background-color: rgb(240, 147, 85);
+div#box{
+    background-color: rgb(255, 255, 255);
     width: 70%;
     height: 300px;
     margin: auto;
-    text-align: center;
+    padding: 20px;
     border-radius: 12px;
-    display: flex;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.562);
 }
 
-div#boxrel > p{
-    position: absolute;
+div#box> p{
     text-align: center;
-    margin: auto;
-    width: 70%;
-    font-size: 1.3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-div#relogio{
-    width: 220px;
-    height: 220px;
-    background-color: white;
-    background-image: url(media/);
-    margin: auto;
-    border-radius: 50%; 
+div#seltab {
+    margin-top: 20px;
+    height: 250px;
 }
 
 footer{
